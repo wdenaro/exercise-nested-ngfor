@@ -1,0 +1,9 @@
+<div *ngFor="let movie of movies">
+  <h3>{{ movie.title }}</h3>
+  <span>{{ movie.year }}</span>
+  <ul>
+    <li *ngFor="let actor of movie.cast">
+      <b>{{ actor.name }}</b>: {{ actor.character }}
+    </li>
+  </ul>
+</div>
